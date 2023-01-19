@@ -11,6 +11,7 @@ Preis_quad = Preis ** 2
 regpar = lm(Menge ~ Preis + I(Preis^2))
 regpar$coefficients
 
+
 # c)
 plot(Preis, Menge, xlim=c(0, 10), ylim=c(0, 50), 
      xlab = 'Verkaufspreis (in Euro)', ylab='Nachgefragte Menge', 
